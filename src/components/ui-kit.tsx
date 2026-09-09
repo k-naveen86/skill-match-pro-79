@@ -131,7 +131,7 @@ export function Field({
   );
 }
 
-export function SectionTitle({ eyebrow, title, sub }: { eyebrow?: string; title: string; sub?: string }) {
+export function SectionTitle({ eyebrow, title, sub }: { eyebrow?: string | undefined; title: string; sub?: string | undefined }) {
   return (
     <div className="space-y-2">
       {eyebrow ? (
