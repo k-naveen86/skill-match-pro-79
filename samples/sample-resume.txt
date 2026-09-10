@@ -1,0 +1,37 @@
+NAVEEN KUMAR
+Bangalore, India | naveen.kumar@example.com | +91 98765 43210 | github.com/naveenk
+
+SUMMARY
+Final-year Computer Science student with hands-on experience building full-stack
+web applications. Comfortable across React front-ends, Node.js APIs and SQL
+databases. Looking for a software engineering role starting mid-2026.
+
+EDUCATION
+B.E. Computer Science and Engineering, RV College of Engineering, 2026 (CGPA 8.6/10)
+Higher Secondary, Narayana Junior College, 2022 (94%)
+
+TECHNICAL SKILLS
+Languages: JavaScript, TypeScript, Python, SQL, Java
+Frontend: React, HTML, CSS, Tailwind CSS, Redux
+Backend: Node.js, Express, REST API design
+Databases: PostgreSQL, MongoDB
+Tools: Git, GitHub Actions, Postman, Figma, Linux
+
+EXPERIENCE
+Web Development Intern — Trellis Software (Jun 2025 – Aug 2025)
+- Built 9 reusable React components used across three internal dashboards.
+- Implemented REST endpoints in Express, reducing report load time by 38%.
+- Wrote integration tests covering the checkout and billing flows.
+
+Open Source Contributor — Various (2024 – present)
+- Merged 14 pull requests across documentation and bug fixes in JS tooling repos.
+
+PROJECTS
+CampusMart — A React + Node marketplace for college students. JWT auth, image
+uploads, PostgreSQL search. 400+ listings during the pilot semester.
+
+TrackIt — Expense tracker with Python data pipeline and Chart.js dashboards.
+
+ACHIEVEMENTS
+Winner, Smart India Hackathon internal round 2025
+Top 5% in university data structures course
