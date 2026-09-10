@@ -99,7 +99,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
   );
 }
 
-function NavLink({ to, children }: { to: string; children: ReactNode }) {
+function NavLink({ to, children }: { to: "/" | "/jobs" | "/upload" | "/dashboard" | "/history"; children: ReactNode }) {
   return (
     <Link
       to={to}

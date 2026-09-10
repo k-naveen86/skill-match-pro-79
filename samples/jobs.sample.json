@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Frontend Developer",
+    "company": "Nimbus Labs",
+    "location": "Bangalore, India",
+    "description": "Build responsive web interfaces with React and modern tooling.",
+    "experience_level": "Entry",
+    "required_skills": ["JavaScript", "React", "HTML", "CSS", "TypeScript", "Git", "REST API"]
+  },
+  {
+    "title": "Backend Developer",
+    "company": "Corvus Systems",
+    "location": "Hyderabad, India",
+    "description": "Design and maintain REST APIs and databases.",
+    "experience_level": "Mid",
+    "required_skills": ["Node.js", "Express", "MongoDB", "SQL", "REST API", "Git", "Docker"]
+  },
+  {
+    "title": "Full Stack Engineer",
+    "company": "Brightwave",
+    "location": "Remote",
+    "description": "End-to-end feature ownership across frontend and backend.",
+    "experience_level": "Mid",
+    "required_skills": ["React", "Node.js", "TypeScript", "PostgreSQL", "REST API", "Git", "AWS"]
+  },
+  {
+    "title": "Data Analyst",
+    "company": "Meridian Analytics",
+    "location": "Pune, India",
+    "description": "Turn raw data into dashboards and business insight.",
+    "experience_level": "Entry",
+    "required_skills": ["SQL", "Python", "Excel", "Pandas", "Power BI", "Statistics"]
+  },
+  {
+    "title": "Machine Learning Engineer",
+    "company": "Axiom AI",
+    "location": "Remote",
+    "description": "Train, evaluate and deploy ML models to production.",
+    "experience_level": "Mid",
+    "required_skills": ["Python", "TensorFlow", "PyTorch", "Scikit-learn", "NLP", "Docker", "SQL"]
+  },
+  {
+    "title": "DevOps Engineer",
+    "company": "Cloudpine",
+    "location": "Remote",
+    "description": "Own CI/CD pipelines and cloud infrastructure.",
+    "experience_level": "Mid",
+    "required_skills": ["Docker", "Kubernetes", "AWS", "Linux", "CI/CD", "Terraform", "Bash"]
+  }
+]

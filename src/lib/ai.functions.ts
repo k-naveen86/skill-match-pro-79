@@ -73,7 +73,19 @@ export const analyzeResume = createServerFn({ method: "POST" })
     const { supabase, userId } = context;
 
     const extracted = await extractWithAI(data.text);
-    const skillSet = new Set(extracted.skills.map(normalize));
+    const resumeSkills = extracted.skills.map(normalize).filter(Boolean);
+    // A resume skill counts for a job skill on exact match, or when one clearly
+    // contains the other ("rest api design" covers "rest api").
+    const hasSkill = (required: string) => {
+      const want = normalize(required);
+      if (!want) return false;
+      return resumeSkills.some(
+        (have) =>
+          have === want ||
+          (want.length >= 3 && have.includes(want)) ||
+          (have.length >= 3 && want.includes(have)),
+      );
+    };
 
     const { data: jobs, error: jobsError } = await supabase
       .from("jobs")
@@ -83,8 +95,8 @@ export const analyzeResume = createServerFn({ method: "POST" })
     const matches = (jobs ?? [])
       .map((job) => {
         const required = job.required_skills ?? [];
-        const matched = required.filter((s) => skillSet.has(normalize(s)));
-        const missing = required.filter((s) => !skillSet.has(normalize(s)));
+        const matched = required.filter((s) => hasSkill(s));
+        const missing = required.filter((s) => !hasSkill(s));
         const score = required.length ? Math.round((matched.length / required.length) * 100) : 0;
         return {
           job_id: job.id,
